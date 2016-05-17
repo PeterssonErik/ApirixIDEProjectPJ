@@ -1,7 +1,54 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewData["Title"] = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACE Autocompletion demo</title>
+    <style type="text/css" media="screen">
+        body {
+            overflow: hidden;
+        }
+
+        #editor {
+            margin: 0;
+            height:500px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>wigge</h1>
+
+<pre id="editor"></pre>
+
+
+
+    <!-- load ace -->
+    <script src="../../no-conflikt/src-noconflict/ace.js"></script>
+    <!-- load ace language tools -->
+    <script src="../../no-conflikt/src-noconflict/ext-language_tools.js"></script>
+    <script>
+   // trigger extension
+   ace.require("ace/ext/language_tools");
+   var editor = ace.edit("editor");
+   editor.session.setMode("ace/mode/javascript");
+   editor.setTheme("ace/theme/tomorrow");
+   // enable autocompletion and snippets
+   editor.setOptions({
+       enableBasicAutocompletion: true,
+       enableSnippets: true,
+       enableLiveAutocompletion: true
+   });
+
+
+    </script>
+
+</body>
+</html>

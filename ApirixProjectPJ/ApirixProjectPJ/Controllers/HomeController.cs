@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Web;
 using System.Web.Mvc;
 
@@ -22,7 +24,8 @@ namespace ApirixProjectPJ.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+        ViewBag.Message = "Your contact page.";
+        
 
             return View();
         }

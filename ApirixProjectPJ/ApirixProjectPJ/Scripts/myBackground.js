@@ -8,8 +8,8 @@ function white() {
     document.getElementById('DocumentHeader').style.color = "black";
 }
 
-function aqua() {
-    document.body.style.backgroundColor = "rgb(70,130,180)";
+function grayblue() {
+    document.body.style.backgroundColor = "rgb(170,170,180)";
     document.getElementById('DocumentHeader').style.color = "black";
 }
 

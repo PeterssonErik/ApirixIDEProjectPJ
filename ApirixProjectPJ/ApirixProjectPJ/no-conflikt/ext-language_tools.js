@@ -1171,7 +1171,7 @@ var AcePopup = function(parentNode) {
     return popup;
 };
 
-dom.importCssString("\
+dom.importCssString(" \
 .ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {\
     background-color: #CAD6FA;\
     z-index: 1;\
@@ -1368,7 +1368,7 @@ var Autocomplete = function() {
 
         this.gatherCompletionsId += 1;
         if (this.popup && this.popup.isOpen)
-            this.popup.hide();
+            this.popup.Hide();
 
         if (this.base)
             this.base.detach();
